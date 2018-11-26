@@ -1,0 +1,8 @@
+V3 3
+FL /home/ck/Documents/Master_TUM/WS_1819/VHDL/example/inverter_example/inverter.vhd 2018/11/22.17:02:51 P.20131013
+EN work/inverter 1542902998 \
+      FL /home/ck/Documents/Master_TUM/WS_1819/VHDL/example/inverter_example/inverter.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/inverter/Behavioral 1542902999 \
+      FL /home/ck/Documents/Master_TUM/WS_1819/VHDL/example/inverter_example/inverter.vhd \
+      EN work/inverter 1542902998

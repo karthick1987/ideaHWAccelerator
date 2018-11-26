@@ -1,0 +1,29 @@
+Command line:
+   tb_inverter_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51581
+
+Thu Nov 22 17:33:34 2018
+
+
+ Elaboration Time: 0.01 sec
+
+ Current Memory Usage: 183.972 Meg
+
+ Total Signals          : 4
+ Total Nets             : 2
+ Total Signal Drivers   : 2
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 2
+ Total Traceable Variables  : 9
+ Total Scalar Nets and Variables : 363
+Total Line Count : 4
+
+ Total Simulation Time: 14.57 sec
+
+ Current Memory Usage: 259.473 Meg
+
+Thu Nov 22 17:34:18 2018
+
