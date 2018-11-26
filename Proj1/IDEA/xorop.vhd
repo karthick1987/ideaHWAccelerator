@@ -33,20 +33,17 @@ entity xorop is
 	Generic(
 		constant BIT_WIDTH: integer := 16);
     Port (
-		CLK,RST : in STD_LOGIC;
 		I1 : in STD_LOGIC_VECTOR(BIT_WIDTH - 1 downto 0);
 		I2 : in STD_LOGIC_VECTOR(BIT_WIDTH - 1 downto 0);
-		O : out STD_LOGIC_VECTOR(BIT_WIDTH - 1 downto 0) );
+		O : out STD_LOGIC_VECTOR(BIT_WIDTH - 1 downto 0));
 end xorop;
 
 architecture Behavioral of xorop is
 
 begin
-XR: process (CLK,RST)
+XR: process (I1,I2)
 	begin
-		if (CLK'event and CLK = '1') then
-			O <= I1 XOR I2;
-		end if;	
+		O <= I1 XOR I2;
 	end process XR;
 
 end Behavioral;

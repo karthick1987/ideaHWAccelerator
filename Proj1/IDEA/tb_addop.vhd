@@ -75,8 +75,8 @@ BEGIN
 		BIT_WIDTH	=> c_WIDTH 
 	)
 			port map(
-			 I1	=> r_ADD_1,
-			 I2	=> r_ADD_2,
+			 I1	=> r_XOR_1,
+			 I2	=> r_XOR_2,
 			 O		=> w_RESULT
 			 );
 			 
