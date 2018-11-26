@@ -23,7 +23,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx primitives in this code.
@@ -37,17 +37,22 @@ entity addop is
 		CLK,RST : in STD_LOGIC;
 		I1 : in STD_LOGIC_VECTOR(BIT_WIDTH - 1 downto 0);
 		I2 : in STD_LOGIC_VECTOR(BIT_WIDTH - 1 downto 0);
-		O : out STD_LOGIC_VECTOR(BIT_WIDTH downto 0));
+		O : out STD_LOGIC_VECTOR(BIT_WIDTH downto 0);
+		cnt :  out INTEGER);
 end addop;
 
 architecture Behavioral of addop is
 
+signal count : integer := 0;
+
 begin
-ADDR: process (CLK,RST)
+ADDR: process (CLK,I1,I2)
 	begin
-		if (CLK'event and CLK = '1') then
-			O(BIT_WIDTH - 1 downto 0) <= I1 + I2;
+		if CLK = '1' and CLK'event then
+			O(BIT_WIDTH - 1 downto 0) <= std_logic_vector(unsigned(I1)) + std_logic_vector(unsigned(I2));
 			O(BIT_WIDTH) <= I1(BIT_WIDTH-1) and I2(BIT_WIDTH-1);
+			count <= count + 1;
+			cnt <= count;
 		end if;	
 	end process ADDR;
 
