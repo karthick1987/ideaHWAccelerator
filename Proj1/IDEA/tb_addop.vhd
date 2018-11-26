@@ -45,11 +45,9 @@ architecture Behavioral of tb_addop is
 		BIT_WIDTH	: natural
 		);
     PORT(
-			CLK,RST 	: 	in STD_LOGIC;
 			I1  	: 	in STD_LOGIC_VECTOR(BIT_WIDTH - 1 downto 0);
 			I2  	: 	in STD_LOGIC_VECTOR(BIT_WIDTH - 1 downto 0);
-			O 		: 	out STD_LOGIC_VECTOR(BIT_WIDTH downto 0);
-			cnt		:  out INTEGER);
+			O 		: 	out STD_LOGIC_VECTOR(BIT_WIDTH downto 0));
     END COMPONENT addop;
     
    --Inputs
@@ -59,9 +57,8 @@ architecture Behavioral of tb_addop is
    --signal O : std_logic;
    -- No clocks detected in port list. Replace <clock> below with 
    -- appropriate port name 
-    signal Tb_cnt 	: integer := 0;
-    signal Tb_Clk 	: std_logic := '0';
-    signal Tb_Rst 	: std_logic := '1';
+    
+	 signal Tb_Clk      : std_logic := '0';
     constant  Tb_I1	: INTEGER := 313;
     constant Tb_I2	: INTEGER := 512;
 
@@ -78,12 +75,9 @@ BEGIN
 		BIT_WIDTH	=> c_WIDTH 
 	)
 			port map(
-			 CLK => Tb_Clk,
-			 RST => Tb_Rst,
 			 I1	=> r_ADD_1,
 			 I2	=> r_ADD_2,
-			 O		=> w_RESULT,
-			 cnt	=> Tb_cnt
+			 O		=> w_RESULT
 			 );
 			 
    I_process : process

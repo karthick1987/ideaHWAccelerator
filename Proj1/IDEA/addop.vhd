@@ -34,26 +34,18 @@ entity addop is
 	Generic(
 		constant BIT_WIDTH: integer := 16);
     Port (
-		CLK,RST : in STD_LOGIC;
 		I1 : in STD_LOGIC_VECTOR(BIT_WIDTH - 1 downto 0);
 		I2 : in STD_LOGIC_VECTOR(BIT_WIDTH - 1 downto 0);
-		O : out STD_LOGIC_VECTOR(BIT_WIDTH downto 0);
-		cnt :  out INTEGER);
+		O : out STD_LOGIC_VECTOR(BIT_WIDTH downto 0)
+		);
 end addop;
 
 architecture Behavioral of addop is
 
-signal count : integer := 0;
-
 begin
-ADDR: process (CLK,I1,I2)
+ADDR: process (I1,I2)
 	begin
-		if CLK = '1' and CLK'event then
 			O(BIT_WIDTH - 1 downto 0) <= std_logic_vector(unsigned(I1)) + std_logic_vector(unsigned(I2));
 			O(BIT_WIDTH) <= I1(BIT_WIDTH-1) and I2(BIT_WIDTH-1);
-			count <= count + 1;
-			cnt <= count;
-		end if;	
 	end process ADDR;
-
 end Behavioral;
