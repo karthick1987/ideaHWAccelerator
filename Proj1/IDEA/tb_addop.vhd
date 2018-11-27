@@ -35,9 +35,9 @@ entity tb_addop is
 architecture Behavioral of tb_addop is
 
     constant c_WIDTH	 :		integer := 16;
-    signal r_ADD_1  : std_logic_vector(c_WIDTH-1 downto 0) := (others => '0');
-    signal r_ADD_2  : std_logic_vector(c_WIDTH-1 downto 0) := (others => '0');
-    signal w_RESULT : std_logic_vector(c_WIDTH downto 0);
+    signal r_ADD_1  : std_logic_vector(c_WIDTH - 1 downto 0) := (others => '0');
+    signal r_ADD_2  : std_logic_vector(c_WIDTH - 1 downto 0) := (others => '0');
+    signal w_RESULT : std_logic_vector(c_WIDTH - 1 downto 0);
 
     -- Component Declaration for the Unit Under Test (UUT)
     COMPONENT addop
@@ -47,7 +47,7 @@ architecture Behavioral of tb_addop is
         PORT(
                 I1  	: 	in STD_LOGIC_VECTOR(BIT_WIDTH - 1 downto 0);
                 I2  	: 	in STD_LOGIC_VECTOR(BIT_WIDTH - 1 downto 0);
-                O 		: 	out STD_LOGIC_VECTOR(BIT_WIDTH downto 0));
+                O 		: 	out STD_LOGIC_VECTOR(BIT_WIDTH - 1 downto 0));
     END COMPONENT addop;
 
      --Inputs
