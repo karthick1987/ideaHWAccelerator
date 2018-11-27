@@ -76,15 +76,17 @@
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/tb_addop - Behavioral |home|ck|Documents|Master_TUM|WS_1819|VHDL|Proj1|IDEA|tb_addop.vhd</ClosedNode>
+         <ClosedNode>/tb_xorop - Behavioral |home|ck|Documents|Master_TUM|WS_1819|VHDL|Proj1|IDEA|tb_xorop.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>tb_addop - Behavioral (/home/ck/Documents/Master_TUM/WS_1819/VHDL/Proj1/IDEA/tb_addop.vhd)</SelectedItem>
+         <SelectedItem>tb_mulop - Behavioral (/home/ck/Documents/Master_TUM/WS_1819/VHDL/Proj1/IDEA/tb_mulop.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000012a000000020000000000000000000000000200000064ffffffff0000008100000003000000020000012a0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000011c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000011c0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>tb_addop - Behavioral (/home/ck/Documents/Master_TUM/WS_1819/VHDL/Proj1/IDEA/tb_addop.vhd)</CurrentItem>
+      <CurrentItem>tb_mulop - Behavioral (/home/ck/Documents/Master_TUM/WS_1819/VHDL/Proj1/IDEA/tb_mulop.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
