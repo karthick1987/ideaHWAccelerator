@@ -71,14 +71,53 @@ begin
 
     M_process : process
     begin
-        Tb_Clk <= '0';
+        Tb_Clk <= NOT Tb_Clk;
         wait for clk_period/2;
             r_MUL_1 <= Tb_I1;
             r_MUL_2 <= Tb_I2;
-        Tb_Clk <= '1';
+        
+        Tb_Clk <= NOT Tb_Clk;
         wait for clk_period/2;
             r_MUL_1 <= Tb_I1_1;
             r_MUL_2 <= Tb_I2_2;
+
+        Tb_Clk <= NOT Tb_Clk;
+        wait for clk_period/2;
+            r_MUL_1 <= x"0001";
+            r_MUL_2 <= x"0001";
+
+        Tb_Clk <= NOT Tb_Clk;
+        wait for clk_period/2;
+            r_MUL_1 <= x"0003";
+            r_MUL_2 <= x"0001";
+        Tb_Clk <= NOT Tb_Clk;
+        wait for clk_period/2;
+            r_MUL_1 <= x"0003";
+            r_MUL_2 <= x"0003";
+        Tb_Clk <= NOT Tb_Clk;
+        wait for clk_period/2;
+            r_MUL_1 <= x"7fff";
+            r_MUL_2 <= x"0003";
+        Tb_Clk <= NOT Tb_Clk;
+        wait for clk_period/2;
+            r_MUL_1 <= x"7fff";
+            r_MUL_2 <= x"7fff";
+        Tb_Clk <= NOT Tb_Clk;
+        wait for clk_period/2;
+            r_MUL_1 <= x"ffff";
+            r_MUL_2 <= x"7fff";
+        Tb_Clk <= NOT Tb_Clk;
+        wait for clk_period/2;
+            r_MUL_1 <= x"ffff";
+            r_MUL_2 <= x"ffff";
+        Tb_Clk <= NOT Tb_Clk;
+        wait for clk_period/2;
+            r_MUL_1 <= x"ffff";
+            r_MUL_2 <= x"8000";
+        Tb_Clk <= NOT Tb_Clk;
+        wait for clk_period/2;
+            r_MUL_1 <= x"8000";
+            r_MUL_2 <= x"8000";
     end process M_process;
 end Behavioral;
 

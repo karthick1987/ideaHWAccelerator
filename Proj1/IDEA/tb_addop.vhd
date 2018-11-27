@@ -58,12 +58,12 @@ architecture Behavioral of tb_addop is
      -- No clocks detected in port list. Replace <clock> below with 
      -- appropriate port name 
 
-    signal Tb_Clk      : std_logic := '0';
-    constant  Tb_I1	: INTEGER := 512;
-    constant Tb_I2	: INTEGER := 512;
+    signal      Tb_Clk  : std_logic := '0';
+    constant    Tb_I1   : INTEGER := 512;
+    constant    Tb_I2   : INTEGER := 512;
 
-    constant  Tb_I1_1	: INTEGER := 0;
-    constant Tb_I2_2	: INTEGER := 4;
+    constant    Tb_I1_1 : INTEGER := 0;
+    constant    Tb_I2_2 : INTEGER := 4;
 
    -- Clk period
     constant clk_period : time := 10 ns;
