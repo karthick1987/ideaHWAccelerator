@@ -34,20 +34,20 @@ entity round is
                constant NIBBLE_BITS: integer := 16
            );
     Port (
-             X1 : in     STD_LOGIC_VECTOR( NIBBLE_BITS - 1 downto 0);
-             X2 : in     STD_LOGIC_VECTOR( NIBBLE_BITS - 1 downto 0);
-             X3 : in     STD_LOGIC_VECTOR( NIBBLE_BITS - 1 downto 0);
-             X4 : in     STD_LOGIC_VECTOR( NIBBLE_BITS - 1 downto 0);
-             Z1 : in     STD_LOGIC_VECTOR( NIBBLE_BITS - 1 downto 0);
-             Z2 : in     STD_LOGIC_VECTOR( NIBBLE_BITS - 1 downto 0);
-             Z3 : in     STD_LOGIC_VECTOR( NIBBLE_BITS - 1 downto 0);
-             Z4 : in     STD_LOGIC_VECTOR( NIBBLE_BITS - 1 downto 0);
-             Z5 : in     STD_LOGIC_VECTOR( NIBBLE_BITS - 1 downto 0);
-             Z6 : in     STD_LOGIC_VECTOR( NIBBLE_BITS - 1 downto 0);
-             Y1 : out    STD_LOGIC_VECTOR( NIBBLE_BITS - 1 downto 0);
-             Y2 : out    STD_LOGIC_VECTOR( NIBBLE_BITS - 1 downto 0);
-             Y3 : out    STD_LOGIC_VECTOR( NIBBLE_BITS - 1 downto 0);
-             Y4 : out    STD_LOGIC_VECTOR( NIBBLE_BITS - 1 downto 0)
+             X1 : in     STD_LOGIC_VECTOR( NIBBLE_BITS - 1 downto 0 );
+             X2 : in     STD_LOGIC_VECTOR( NIBBLE_BITS - 1 downto 0 );
+             X3 : in     STD_LOGIC_VECTOR( NIBBLE_BITS - 1 downto 0 );
+             X4 : in     STD_LOGIC_VECTOR( NIBBLE_BITS - 1 downto 0 );
+             Z1 : in     STD_LOGIC_VECTOR( NIBBLE_BITS - 1 downto 0 );
+             Z2 : in     STD_LOGIC_VECTOR( NIBBLE_BITS - 1 downto 0 );
+             Z3 : in     STD_LOGIC_VECTOR( NIBBLE_BITS - 1 downto 0 );
+             Z4 : in     STD_LOGIC_VECTOR( NIBBLE_BITS - 1 downto 0 );
+             Z5 : in     STD_LOGIC_VECTOR( NIBBLE_BITS - 1 downto 0 );
+             Z6 : in     STD_LOGIC_VECTOR( NIBBLE_BITS - 1 downto 0 );
+             Y1 : out    STD_LOGIC_VECTOR( NIBBLE_BITS - 1 downto 0 );
+             Y2 : out    STD_LOGIC_VECTOR( NIBBLE_BITS - 1 downto 0 );
+             Y3 : out    STD_LOGIC_VECTOR( NIBBLE_BITS - 1 downto 0 );
+             Y4 : out    STD_LOGIC_VECTOR( NIBBLE_BITS - 1 downto 0 )
          );
 end round;
 

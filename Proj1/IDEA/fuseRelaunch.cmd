@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "/home/ck/Documents/Master_TUM/WS_1819/VHDL/Proj1/IDEA/tb_round_isim_beh.exe" -prj "/home/ck/Documents/Master_TUM/WS_1819/VHDL/Proj1/IDEA/tb_round_beh.prj" "work.tb_round" 
+-intstyle "ise" -incremental -o "/home/ck/Documents/Master_TUM/WS_1819/VHDL/Proj1/IDEA/tb_trafo_isim_beh.exe" -prj "/home/ck/Documents/Master_TUM/WS_1819/VHDL/Proj1/IDEA/tb_trafo_beh.prj" "work.tb_trafo" 

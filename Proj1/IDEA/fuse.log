@@ -1,17 +1,16 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/ck/Documents/Master_TUM/WS_1819/VHDL/Proj1/IDEA/tb_round_isim_beh.exe -prj /home/ck/Documents/Master_TUM/WS_1819/VHDL/Proj1/IDEA/tb_round_beh.prj work.tb_round 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/ck/Documents/Master_TUM/WS_1819/VHDL/Proj1/IDEA/tb_trafo_isim_beh.exe -prj /home/ck/Documents/Master_TUM/WS_1819/VHDL/Proj1/IDEA/tb_trafo_beh.prj work.tb_trafo 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Parsing VHDL file "/home/ck/Documents/Master_TUM/WS_1819/VHDL/Proj1/IDEA/xorop.vhd" into library work
 Parsing VHDL file "/home/ck/Documents/Master_TUM/WS_1819/VHDL/Proj1/IDEA/mulop.vhd" into library work
 Parsing VHDL file "/home/ck/Documents/Master_TUM/WS_1819/VHDL/Proj1/IDEA/addop.vhd" into library work
-Parsing VHDL file "/home/ck/Documents/Master_TUM/WS_1819/VHDL/Proj1/IDEA/round.vhd" into library work
-Parsing VHDL file "/home/ck/Documents/Master_TUM/WS_1819/VHDL/Proj1/IDEA/tb_round.vhd" into library work
+Parsing VHDL file "/home/ck/Documents/Master_TUM/WS_1819/VHDL/Proj1/IDEA/trafo.vhd" into library work
+Parsing VHDL file "/home/ck/Documents/Master_TUM/WS_1819/VHDL/Proj1/IDEA/tb_trafo.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 86424 KB
-Fuse CPU Usage: 970 ms
+Fuse Memory Usage: 86412 KB
+Fuse CPU Usage: 980 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package std_logic_arith
@@ -19,13 +18,12 @@ Compiling package std_logic_unsigned
 Compiling package numeric_std
 Compiling architecture behavioral of entity mulop [\mulop(16)\]
 Compiling architecture behavioral of entity addop [\addop(16)\]
-Compiling architecture behavioral of entity xorop [\xorop(16)\]
-Compiling architecture structural of entity round [\round(16)\]
-Compiling architecture behavioral of entity tb_round
+Compiling architecture behavioral of entity trafo [trafo_default]
+Compiling architecture behavioral of entity tb_trafo
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
-Compiled 14 VHDL Units
-Built simulation executable /home/ck/Documents/Master_TUM/WS_1819/VHDL/Proj1/IDEA/tb_round_isim_beh.exe
-Fuse Memory Usage: 1186720 KB
-Fuse CPU Usage: 1130 ms
-GCC CPU Usage: 400 ms
+Compiled 12 VHDL Units
+Built simulation executable /home/ck/Documents/Master_TUM/WS_1819/VHDL/Proj1/IDEA/tb_trafo_isim_beh.exe
+Fuse Memory Usage: 1186600 KB
+Fuse CPU Usage: 1140 ms
+GCC CPU Usage: 430 ms
