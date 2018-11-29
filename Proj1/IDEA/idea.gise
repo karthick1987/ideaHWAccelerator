@@ -24,6 +24,7 @@
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="addop_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="idea_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
@@ -32,13 +33,15 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="round_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_addop_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_addop_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_idea_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_idea_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tb_idea_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_idea_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_mulop_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_mulop_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_round_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_round_stx_beh.prj"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_trafo_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_trafo_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tb_trafo_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_trafo_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_xorop_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_xorop_stx_beh.prj"/>
@@ -52,7 +55,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1543420391" xil_pn:in_ck="-209295483568856986" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1543420391">
+    <transform xil_pn:end_ts="1543491417" xil_pn:in_ck="-209295483568856986" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1543491417">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="addop.vhd"/>
@@ -68,19 +71,19 @@
       <outfile xil_pn:name="trafo.vhd"/>
       <outfile xil_pn:name="xorop.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1543420396" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-5670521285603282636" xil_pn:start_ts="1543420396">
+    <transform xil_pn:end_ts="1543484102" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7175229422803001579" xil_pn:start_ts="1543484102">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1543420396" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3917868750972216374" xil_pn:start_ts="1543420396">
+    <transform xil_pn:end_ts="1543484102" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-5685566969096852563" xil_pn:start_ts="1543484102">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1543358489" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-852875413100618385" xil_pn:start_ts="1543358489">
+    <transform xil_pn:end_ts="1543488285" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-7353055282168443810" xil_pn:start_ts="1543488285">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1543420396" xil_pn:in_ck="-209295483568856986" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1543420396">
+    <transform xil_pn:end_ts="1543494816" xil_pn:in_ck="-209295483568856986" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1543494816">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="addop.vhd"/>
@@ -96,7 +99,7 @@
       <outfile xil_pn:name="trafo.vhd"/>
       <outfile xil_pn:name="xorop.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1543420398" xil_pn:in_ck="-209295483568856986" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8062757186547740099" xil_pn:start_ts="1543420396">
+    <transform xil_pn:end_ts="1543494818" xil_pn:in_ck="-209295483568856986" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1945758540316261227" xil_pn:start_ts="1543494816">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -104,16 +107,16 @@
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="tb_trafo_beh.prj"/>
-      <outfile xil_pn:name="tb_trafo_isim_beh.exe"/>
+      <outfile xil_pn:name="tb_idea_beh.prj"/>
+      <outfile xil_pn:name="tb_idea_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1543420398" xil_pn:in_ck="-5456038048615327839" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="484262918138413018" xil_pn:start_ts="1543420398">
+    <transform xil_pn:end_ts="1543494818" xil_pn:in_ck="-7627128754286931528" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="190701330194177288" xil_pn:start_ts="1543494818">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="tb_trafo_isim_beh.wdb"/>
+      <outfile xil_pn:name="tb_idea_isim_beh.wdb"/>
     </transform>
   </transforms>
 

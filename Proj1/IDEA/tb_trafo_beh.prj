@@ -1,4 +1,0 @@
-vhdl work "mulop.vhd"
-vhdl work "addop.vhd"
-vhdl work "trafo.vhd"
-vhdl work "tb_trafo.vhd"
