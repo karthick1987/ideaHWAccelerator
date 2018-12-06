@@ -39,7 +39,7 @@ entity control is
 end control;
 
 architecture Behavioral of control is
-    signal state : unsigned(3 downto 0) := (OTHERS => '0');
+    signal state : unsigned(3 downto 0) := "1000";
 begin
     ROUND <= std_logic_vector(state);
 
@@ -50,12 +50,10 @@ begin
             --    state <= "0000";
             --end if;
             case state is
-                when "0000" => if (start = '1') then
-                                    state <= "0001";
+                when "0000" =>      state <= "0001";
                                     READY <= '0';
-                                    S <= '0';
+                                    S <= '1';
                                     EN <= '1';
-                                end if;
 
                 when "0001" =>
                                     state <= "0010";
@@ -89,14 +87,21 @@ begin
                                     EN <= '1';
                 when "0111" => 
                                     state <= "1000";
-                                    READY <= '0';
-                                    S <= '1';
-                                    EN <= '1';
-                when "1000" =>
-                                    state <= "0001";
                                     READY <= '1';
                                     S <= '1';
                                     EN <= '0';
+                when "1000" =>
+                                if (start = '1') then
+                                    state <= "0000";
+                                    READY <= '0';
+                                    S <= '0';
+                                    EN <= '1';
+                                else
+                                    state <= "1000";
+                                    READY <= '1';
+                                    S <= '1';
+                                    EN <= '0';
+                                end if;
                 when others =>
                                     state <= "0000";
                                     READY <= '0';
