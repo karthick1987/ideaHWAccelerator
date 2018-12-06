@@ -21,3 +21,4 @@ This is a Lite version of ISim.
 Simulator is doing circuit initialization process.
 at 0 ps, Instance /tb_idea/uut/R1/M1/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 Finished circuit initialization process.
+# exit 0

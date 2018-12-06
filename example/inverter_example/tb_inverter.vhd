@@ -68,7 +68,8 @@ BEGIN
    BEGIN
        I <= '0';
        wait for I_period/2;
-       I <= '1';wait for I_period/2;
+       I <= '1';
+       wait for I_period/2;
    end process;
 
 END;
