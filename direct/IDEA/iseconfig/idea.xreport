@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-11-29T13:33:04</DateModified>
+  <DateModified>2018-12-06T16:54:56</DateModified>
   <ModuleName>idea</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>/home/ck/Documents/Master_TUM/WS_1819/VHDL/Proj1/IDEA/iseconfig/idea.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/ck/Documents/Master_TUM/WS_1819/VHDL/Proj1/IDEA</ImplementationReportsDirectory>
+  <SavedFilePath>/home/ck/Documents/Master_TUM/WS_1819/VHDL/direct/IDEA/iseconfig/idea.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/ck/Documents/Master_TUM/WS_1819/VHDL/direct/IDEA/</ImplementationReportsDirectory>
   <DateInitialized>2018-11-29T13:33:04</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

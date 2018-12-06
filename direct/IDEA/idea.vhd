@@ -33,19 +33,19 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity idea is
     Port (
-             X1     : in     STD_LOGIC_VECTOR( 15 downto 0 );
-             X2     : in     STD_LOGIC_VECTOR( 15 downto 0 );
-             X3     : in     STD_LOGIC_VECTOR( 15 downto 0 );
-             X4     : in     STD_LOGIC_VECTOR( 15 downto 0 );
              KEY    : in     STD_LOGIC_VECTOR( 127 downto 0 );
-             Y1     : out    STD_LOGIC_VECTOR( 15 downto 0 );
-             Y2     : out    STD_LOGIC_VECTOR( 15 downto 0 );
-             Y3     : out    STD_LOGIC_VECTOR( 15 downto 0 );
-             Y4     : out    STD_LOGIC_VECTOR( 15 downto 0 )
+             X_1     : in     STD_LOGIC_VECTOR( 15 downto 0 );
+             X_2     : in     STD_LOGIC_VECTOR( 15 downto 0 );
+             X_3     : in     STD_LOGIC_VECTOR( 15 downto 0 );
+             X_4     : in     STD_LOGIC_VECTOR( 15 downto 0 );
+             Y_1     : out    STD_LOGIC_VECTOR( 15 downto 0 );
+             Y_2     : out    STD_LOGIC_VECTOR( 15 downto 0 );
+             Y_3     : out    STD_LOGIC_VECTOR( 15 downto 0 );
+             Y_4     : out    STD_LOGIC_VECTOR( 15 downto 0 )
          );
 end idea;
 
-architecture Behavioral of idea is
+architecture Structural of idea is
     Component round
     Generic(
                NIBBLE_BITS: natural
@@ -137,7 +137,7 @@ begin
     iKey9 <= iKey_SHIFTED6(127 downto 64);
 
     -- Round Instantiation
-    R1: round generic map(NIBS) port map( X1, X2, X3, X4, iKey1(95 downto 80), iKey1(79 downto 64), iKey1(63 downto 48), iKey1(47 downto 32), iKey1 (31 downto 16), iKey1(15 downto 0), roundOut1(63 downto 48), roundOut1(47 downto 32), roundOut1 (31 downto 16), roundOut1(15 downto 0) );
+    R1: round generic map(NIBS) port map( X_1, X_2, X_3, X_4, iKey1(95 downto 80), iKey1(79 downto 64), iKey1(63 downto 48), iKey1(47 downto 32), iKey1 (31 downto 16), iKey1(15 downto 0), roundOut1(63 downto 48), roundOut1(47 downto 32), roundOut1 (31 downto 16), roundOut1(15 downto 0) );
 
     R2: round generic map(NIBS) port map( roundOut1(63 downto 48), roundOut1(47 downto 32), roundOut1 (31 downto 16), roundOut1(15 downto 0), iKey2(95 downto 80), iKey2(79 downto 64), iKey2(63 downto 48), iKey2(47 downto 32), iKey2 (31 downto 16), iKey2(15 downto 0), roundOut2(63 downto 48), roundOut2(47 downto 32), roundOut2 (31 downto 16), roundOut2(15 downto 0) );
     R3: round generic map(NIBS) port map( roundOut2(63 downto 48), roundOut2(47 downto 32), roundOut2 (31 downto 16), roundOut2(15 downto 0), iKey3(95 downto 80), iKey3(79 downto 64), iKey3(63 downto 48), iKey3(47 downto 32), iKey3 (31 downto 16), iKey3(15 downto 0), roundOut3(63 downto 48), roundOut3(47 downto 32), roundOut3 (31 downto 16), roundOut3(15 downto 0) );
@@ -147,7 +147,7 @@ begin
     R7: round generic map(NIBS) port map( roundOut6(63 downto 48), roundOut6(47 downto 32), roundOut6 (31 downto 16), roundOut6(15 downto 0), iKey7(95 downto 80), iKey7(79 downto 64), iKey7(63 downto 48), iKey7(47 downto 32), iKey7 (31 downto 16), iKey7(15 downto 0), roundOut7(63 downto 48), roundOut7(47 downto 32), roundOut7 (31 downto 16), roundOut7(15 downto 0) );
     R8: round generic map(NIBS) port map( roundOut7(63 downto 48), roundOut7(47 downto 32), roundOut7 (31 downto 16), roundOut7(15 downto 0), iKey8(95 downto 80), iKey8(79 downto 64), iKey8(63 downto 48), iKey8(47 downto 32), iKey8 (31 downto 16), iKey8(15 downto 0), roundOut8(63 downto 48), roundOut8(47 downto 32), roundOut8 (31 downto 16), roundOut8(15 downto 0) );
 
-    T1: trafo port map( roundOut8(63 downto 48), roundOut8(47 downto 32), roundOut8 (31 downto 16), roundOut8(15 downto 0), iKey9(63 downto 48), iKey9(47 downto 32), iKey9 (31 downto 16), iKey9(15 downto 0), Y1, Y2, Y3, Y4);
+    T1: trafo port map( roundOut8(63 downto 48), roundOut8(47 downto 32), roundOut8 (31 downto 16), roundOut8(15 downto 0), iKey9(63 downto 48), iKey9(47 downto 32), iKey9 (31 downto 16), iKey9(15 downto 0), Y_1, Y_2, Y_3, Y_4);
 
-end Behavioral;
+end Structural;
 

@@ -35,9 +35,9 @@ entity mulop is
     Generic(
                constant BIT_WIDTH: integer := 16);
     Port (
-             I1 : in STD_LOGIC_VECTOR(BIT_WIDTH - 1 downto 0);
-             I2 : in STD_LOGIC_VECTOR(BIT_WIDTH - 1 downto 0);
-             O : out STD_LOGIC_VECTOR(BIT_WIDTH - 1 downto 0)
+             I_1 : in STD_LOGIC_VECTOR(BIT_WIDTH - 1 downto 0);
+             I_2 : in STD_LOGIC_VECTOR(BIT_WIDTH - 1 downto 0);
+             O_1 : out STD_LOGIC_VECTOR(BIT_WIDTH - 1 downto 0)
          );
 end mulop;
 
@@ -54,20 +54,20 @@ architecture Behavioral of mulop is
     constant max        : STD_LOGIC_VECTOR(BIT_WIDTH downto 0) := '1' & X"0000";
 
 begin
-    MULOP: process(I1,I2,a,b,ab,modulo,divident,ans)
+    MULOP: process(I_1,I_2,a,b,ab,modulo,divident,ans)
     begin
-        if I1 = (I1'range => '0') then
+        if I_1 = (I_1'range => '0') then
             a <= max;
         else
             a(16) <= '0';
-            a(15 downto 0) <= I1;
+            a(15 downto 0) <= I_1;
         end if;
 
-        if I2 = (I2'range => '0') then
+        if I_2 = (I_2'range => '0') then
             b <= max;
         else
             b(16) <= '0';
-            b(15 downto 0) <= I2;
+            b(15 downto 0) <= I_2;
         end if;
 
         ab <= a*b;
@@ -79,6 +79,6 @@ begin
         else
             ans <= (max + 1 + modulo) - divident;
         end if;
-        O <= ans(BIT_WIDTH - 1 downto 0);
+        O_1 <= ans(BIT_WIDTH - 1 downto 0);
     end process MULOP;
 end Behavioral;

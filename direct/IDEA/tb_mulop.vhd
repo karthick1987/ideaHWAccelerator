@@ -44,9 +44,9 @@ architecture Behavioral of tb_mulop is
                     BIT_WIDTH   : natural
                );
         PORT(
-             I1 : in STD_LOGIC_VECTOR(BIT_WIDTH - 1 downto 0);
-             I2 : in STD_LOGIC_VECTOR(BIT_WIDTH - 1 downto 0);
-             O : out STD_LOGIC_VECTOR(BIT_WIDTH - 1 downto 0)
+             I_1 : in STD_LOGIC_VECTOR(BIT_WIDTH - 1 downto 0);
+             I_2 : in STD_LOGIC_VECTOR(BIT_WIDTH - 1 downto 0);
+             O_1 : out STD_LOGIC_VECTOR(BIT_WIDTH - 1 downto 0)
             );
     END COMPONENT mulop;
 
@@ -65,9 +65,9 @@ begin
                                BIT_WIDTH	=> c_WIDTH
                            )
     port map(
-                I1  => r_MUL_1,
-                I2  => r_MUL_2,
-                O   => w_RESULT);
+                I_1  => r_MUL_1,
+                I_2  => r_MUL_2,
+                O_1   => w_RESULT);
 
     M_process : process
     begin

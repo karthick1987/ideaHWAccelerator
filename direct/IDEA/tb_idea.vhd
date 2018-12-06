@@ -35,15 +35,15 @@ end tb_idea;
 architecture Behavioral of tb_idea is
     Component idea
     Port (
-             X1     : in     STD_LOGIC_VECTOR( 15 downto 0 );
-             X2     : in     STD_LOGIC_VECTOR( 15 downto 0 );
-             X3     : in     STD_LOGIC_VECTOR( 15 downto 0 );
-             X4     : in     STD_LOGIC_VECTOR( 15 downto 0 );
              KEY    : in     STD_LOGIC_VECTOR( 127 downto 0 );
-             Y1     : out    STD_LOGIC_VECTOR( 15 downto 0 );
-             Y2     : out    STD_LOGIC_VECTOR( 15 downto 0 );
-             Y3     : out    STD_LOGIC_VECTOR( 15 downto 0 );
-             Y4     : out    STD_LOGIC_VECTOR( 15 downto 0 )
+             X_1     : in     STD_LOGIC_VECTOR( 15 downto 0 );
+             X_2     : in     STD_LOGIC_VECTOR( 15 downto 0 );
+             X_3     : in     STD_LOGIC_VECTOR( 15 downto 0 );
+             X_4     : in     STD_LOGIC_VECTOR( 15 downto 0 );
+             Y_1     : out    STD_LOGIC_VECTOR( 15 downto 0 );
+             Y_2     : out    STD_LOGIC_VECTOR( 15 downto 0 );
+             Y_3     : out    STD_LOGIC_VECTOR( 15 downto 0 );
+             Y_4     : out    STD_LOGIC_VECTOR( 15 downto 0 )
          );
     End Component idea;
 
@@ -69,7 +69,7 @@ begin
     X4 <= X( 15 downto 0 );
 
    -- Instantiate the Unit Under Test (UUT)
-    uut: idea port map(X1,X2,X3,X4,K,Y(63 downto 48), Y(47 downto 32) , Y(31 downto 16), Y(15 downto 0));
+    uut: idea port map(K,X1,X2,X3,X4,Y(63 downto 48), Y(47 downto 32) , Y(31 downto 16), Y(15 downto 0));
 
     ID_EN: process
     begin

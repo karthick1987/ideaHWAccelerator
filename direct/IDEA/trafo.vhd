@@ -53,9 +53,9 @@ architecture Behavioral of trafo is
                     BIT_WIDTH   : natural
                );
         PORT(
-             I1 : in STD_LOGIC_VECTOR( BIT_WIDTH - 1 downto 0 );
-             I2 : in STD_LOGIC_VECTOR( BIT_WIDTH - 1 downto 0 );
-             O : out STD_LOGIC_VECTOR( BIT_WIDTH - 1 downto 0 )
+             I_1 : in STD_LOGIC_VECTOR( BIT_WIDTH - 1 downto 0 );
+             I_2 : in STD_LOGIC_VECTOR( BIT_WIDTH - 1 downto 0 );
+             O_1 : out STD_LOGIC_VECTOR( BIT_WIDTH - 1 downto 0 )
             );
     END COMPONENT mulop;
     -- ADD Component
