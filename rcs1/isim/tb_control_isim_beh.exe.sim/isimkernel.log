@@ -2,12 +2,12 @@ Command line:
    tb_control_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  51129
+     -socket  44983
 
-Fri Dec  7 00:05:49 2018
+Sat Dec 15 15:00:24 2018
 
 
- Elaboration Time: 0 sec
+ Elaboration Time: 0.01 sec
 
  Current Memory Usage: 184.058 Meg
 
@@ -25,5 +25,5 @@ Total Line Count : 84
 
  Current Memory Usage: 259.559 Meg
 
-Fri Dec  7 00:06:55 2018
+Sat Dec 15 15:05:14 2018
 
