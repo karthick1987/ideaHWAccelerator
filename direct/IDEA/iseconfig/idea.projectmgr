@@ -17,6 +17,7 @@
          <ClosedNode>/idea - Behavioral |home|ck|Documents|Master_TUM|WS_1819|VHDL|direct|IDEA|idea.vhd/R7 - round - Structural</ClosedNode>
          <ClosedNode>/idea - Behavioral |home|ck|Documents|Master_TUM|WS_1819|VHDL|direct|IDEA|idea.vhd/R8 - round - Structural</ClosedNode>
          <ClosedNode>/idea - Behavioral |home|ck|Documents|Master_TUM|WS_1819|VHDL|direct|IDEA|idea.vhd/T1 - trafo - Behavioral</ClosedNode>
+         <ClosedNode>/idea - Structural |home|ck|Documents|Master_TUM|WS_1819|VHDL|direct|IDEA|idea.vhd</ClosedNode>
          <ClosedNode>/idea - Structural |home|ck|Documents|Master_TUM|WS_1819|VHDL|direct|IDEA|idea.vhd/R2 - round - Structural</ClosedNode>
          <ClosedNode>/idea - Structural |home|ck|Documents|Master_TUM|WS_1819|VHDL|direct|IDEA|idea.vhd/R3 - round - Structural</ClosedNode>
          <ClosedNode>/idea - Structural |home|ck|Documents|Master_TUM|WS_1819|VHDL|direct|IDEA|idea.vhd/R4 - round - Structural</ClosedNode>
@@ -30,7 +31,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000013f000000020000000000000000000000000200000064ffffffff0000008100000003000000020000013f0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000000ed000000020000000000000000000000000200000064ffffffff000000810000000300000002000000ed0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>idea</CurrentItem>
    </ItemView>
