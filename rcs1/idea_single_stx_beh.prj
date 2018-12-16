@@ -1,0 +1,5 @@
+vhdl isim_temp "reg.vhd"
+vhdl isim_temp "mux2x1.vhd"
+vhdl isim_temp "keygen.vhd"
+vhdl isim_temp "control.vhd"
+vhdl isim_temp "idea_single.vhd"

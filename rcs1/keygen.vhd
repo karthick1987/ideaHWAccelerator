@@ -145,12 +145,12 @@ begin
                                 K_5 <= iKey8(31 downto 16);
                                 K_6 <= iKey8(15 downto 0);
 
-            when "1000" =>      K_1 <= iKey9(95 downto 80);
-                                K_2 <= iKey9(79 downto 64);
-                                K_3 <= iKey9(63 downto 48);
-                                K_4 <= iKey9(47 downto 32);
-                                K_5 <= iKey9(31 downto 16);
-                                K_6 <= iKey9(15 downto 0);
+            when "1000" =>      K_1 <= iKey9(63 downto 48);
+                                K_2 <= iKey9(47 downto 32);
+                                K_3 <= iKey9(31 downto 16);
+                                K_4 <= iKey9(15 downto 0);
+                                K_5 <= (others => '0');
+                                K_6 <= (others => '0');
 
             when others =>      K_1 <= (others => '0');
                                 K_2 <= (others => '0');
