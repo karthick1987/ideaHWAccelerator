@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs1/impact.xsl
+OUTFILE=/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs1/impact.xsl
+FAMILY=None
+PART=None
+WORKINGDIR=/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs1
+LICENSE=iMPACT
+USER_INFO=iMPACT

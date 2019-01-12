@@ -53,6 +53,7 @@ end component idea_single;
 
     constant clk_period : time := 10 ns;
     
+	signal count	: integer := 0;
     signal Tb_Clk   : STD_LOGIC := '0';
     signal Tb_START : STD_LOGIC := '0';
     signal KEY      : STD_LOGIC_VECTOR (127 downto 0) := (OTHERS => '0');
@@ -81,99 +82,123 @@ begin
     begin
         Tb_Clk <= NOT Tb_Clk;
         wait for clk_period/2;
+			count <= count + 1;
+		
+		if count = 1 then
             Tb_START <= '1';
+		end if;
+
+		if count = 3 then
+            Tb_START <= '0';
+		end if;
+
+		if count = 0 then
             X <= x"1111222244448888";
             KEY <= x"00010002000300040005000600070008";
-
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
+		end if;
+		
+		if count = 25 then
             Tb_START <= '1';
+		end if;
 
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
+		if count = 20 then
+            X <= x"0001000200030004";
+            KEY <= x"11112222333344445555666677778888";
+		end if;
+		
+		if count = 27 then
             Tb_START <= '0';
+		end if;
 
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
-            Tb_START <= '0';
-
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
-            Tb_START <= '0';
-
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
-            Tb_START <= '0';
-
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
-            Tb_START <= '0';
-
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
-            Tb_START <= '0';
-
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
-            Tb_START <= '0';
-
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
-            Tb_START <= '0';
-
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
-            Tb_START <= '0';
-
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
-			X <= x"0000000100020003";
-			KEY <= x"00010002000300040005000600070008";
-            Tb_START <= '0';
-
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
-            Tb_START <= '1';
-
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
-            Tb_START <= '1';
-
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
-            Tb_START <= '0';
-
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
-            Tb_START <= '0';
-
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
-            Tb_START <= '0';
-
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
-            Tb_START <= '0';
-
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
-            Tb_START <= '0';
-
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
-            Tb_START <= '0';
-
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
-            Tb_START <= '0';
-
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
-            Tb_START <= '0';
-
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
-            Tb_START <= '0';
+--        Tb_Clk <= NOT Tb_Clk;
+--        wait for clk_period/2;
+--            Tb_START <= '1';
+--
+--        Tb_Clk <= NOT Tb_Clk;
+--        wait for clk_period/2;
+--            Tb_START <= '0';
+--
+--        Tb_Clk <= NOT Tb_Clk;
+--        wait for clk_period/2;
+--            Tb_START <= '0';
+--
+--        Tb_Clk <= NOT Tb_Clk;
+--        wait for clk_period/2;
+--            Tb_START <= '0';
+--
+--        Tb_Clk <= NOT Tb_Clk;
+--        wait for clk_period/2;
+--            Tb_START <= '0';
+--
+--        Tb_Clk <= NOT Tb_Clk;
+--        wait for clk_period/2;
+--            Tb_START <= '0';
+--
+--        Tb_Clk <= NOT Tb_Clk;
+--        wait for clk_period/2;
+--            Tb_START <= '0';
+--
+--        Tb_Clk <= NOT Tb_Clk;
+--        wait for clk_period/2;
+--            Tb_START <= '0';
+--
+--        Tb_Clk <= NOT Tb_Clk;
+--        wait for clk_period/2;
+--            Tb_START <= '0';
+--
+--        Tb_Clk <= NOT Tb_Clk;
+--        wait for clk_period/2;
+--            Tb_START <= '0';
+--
+--        Tb_Clk <= NOT Tb_Clk;
+--        wait for clk_period/2;
+--			X <= x"0000000100020003";
+--			KEY <= x"00010002000300040005000600070008";
+--            Tb_START <= '0';
+--
+--        Tb_Clk <= NOT Tb_Clk;
+--        wait for clk_period/2;
+--            Tb_START <= '1';
+--
+--        Tb_Clk <= NOT Tb_Clk;
+--        wait for clk_period/2;
+--            Tb_START <= '1';
+--
+--        Tb_Clk <= NOT Tb_Clk;
+--        wait for clk_period/2;
+--            Tb_START <= '0';
+--
+--        Tb_Clk <= NOT Tb_Clk;
+--        wait for clk_period/2;
+--            Tb_START <= '0';
+--
+--        Tb_Clk <= NOT Tb_Clk;
+--        wait for clk_period/2;
+--            Tb_START <= '0';
+--
+--        Tb_Clk <= NOT Tb_Clk;
+--        wait for clk_period/2;
+--            Tb_START <= '0';
+--
+--        Tb_Clk <= NOT Tb_Clk;
+--        wait for clk_period/2;
+--            Tb_START <= '0';
+--
+--        Tb_Clk <= NOT Tb_Clk;
+--        wait for clk_period/2;
+--            Tb_START <= '0';
+--
+--        Tb_Clk <= NOT Tb_Clk;
+--        wait for clk_period/2;
+--            Tb_START <= '0';
+--
+--        Tb_Clk <= NOT Tb_Clk;
+--        wait for clk_period/2;
+--            Tb_START <= '0';
+--
+--        Tb_Clk <= NOT Tb_Clk;
+--        wait for clk_period/2;
+--            Tb_START <= '0';
 --
 --        Tb_Clk <= NOT Tb_Clk;
 --        wait for clk_period/2;

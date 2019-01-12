@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs1/idea_com.ncd
+OUTFILE=/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs1/idea_com.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs1
+LICENSE=WebPack
+USER_INFO=211334946_0_0_873
