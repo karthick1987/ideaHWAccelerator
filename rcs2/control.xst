@@ -1,0 +1,5 @@
+set -tmpdir "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/xst/projnav.tmp"
+set -xsthdpdir "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/xst"
+elaborate
+-ifn control.prj
+-ifmt mixed
