@@ -1,0 +1,8 @@
+vhdl isim_temp "txmit.vhd"
+vhdl isim_temp "rxcver.vhd"
+vhdl isim_temp "uart.vhd"
+vhdl isim_temp "mux2x1.vhd"
+vhdl isim_temp "idea_rcs2.vhd"
+vhdl isim_temp "idea_com_inner.vhd"
+vhdl isim_temp "clk_div.vhd"
+vhdl isim_temp "idea_com.vhd"
