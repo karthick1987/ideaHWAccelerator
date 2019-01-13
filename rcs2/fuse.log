@@ -1,23 +1,25 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -relaunch -intstyle "ise" -incremental -o "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/tb_control_isim_beh.exe" -prj "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/tb_control_beh.prj" "work.tb_control" 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -relaunch -intstyle "ise" -incremental -o "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/tb_roundcounter_isim_beh.exe" -prj "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/tb_roundcounter_beh.prj" "work.tb_roundcounter" 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Parsing VHDL file "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/control.vhd" into library work
-Parsing VHDL file "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/tb_control.vhd" into library work
+Parsing VHDL file "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/roundcounter.vhd" into library work
+Parsing VHDL file "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/tb_roundcounter.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 85040 KB
-Fuse CPU Usage: 1040 ms
+Fuse Memory Usage: 86444 KB
+Fuse CPU Usage: 970 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
-Compiling architecture behavioral of entity control [control_default]
-Compiling architecture behavioral of entity tb_control
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity roundcounter [roundcounter_default]
+Compiling architecture behavioral of entity tb_roundcounter
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
-Compiled 6 VHDL Units
-Built simulation executable /home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/tb_control_isim_beh.exe
-Fuse Memory Usage: 1180940 KB
-Fuse CPU Usage: 1110 ms
-GCC CPU Usage: 160 ms
+Compiled 8 VHDL Units
+Built simulation executable /home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/tb_roundcounter_isim_beh.exe
+Fuse Memory Usage: 1186468 KB
+Fuse CPU Usage: 1070 ms
+GCC CPU Usage: 100 ms

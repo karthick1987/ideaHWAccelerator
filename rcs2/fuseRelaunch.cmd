@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/tb_control_isim_beh.exe" -prj "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/tb_control_beh.prj" "work.tb_control" 
+-intstyle "ise" -incremental -o "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/tb_roundcounter_isim_beh.exe" -prj "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/tb_roundcounter_beh.prj" "work.tb_roundcounter" 
