@@ -96,7 +96,8 @@ architecture Structural of clockedround is
              );
     END COMPONENT datapath;
 
-signal  S : STD_LOGIC_VECTOR( 1 downto 0);
+signal  S : STD_LOGIC_VECTOR( 1 downto 0) := (OTHERS => '0');
+signal  S_T : STD_LOGIC_VECTOR( 1 downto 0) := (OTHERS => '0');
 signal  EN125 : STD_LOGIC;
 signal  EN346 : STD_LOGIC;
 signal  EN78 : STD_LOGIC;
@@ -109,7 +110,7 @@ begin
 --    Y4_TRAFO <= Y4;
 
     D1: datapath port map(S, CLK, EN125, EN346, EN78, X1, X2, X3, X4, Z1, Z2, Z3, Z4, Z5, Z6, Y1, Y2, Y3, Y4);
-    C1: control port map(CLK, INIT, TRAFO, EN125, EN346, EN78, RESULT, S, S);
+    C1: control port map(CLK, INIT, TRAFO, EN125, EN346, EN78, RESULT, S, S_T);
 
 end Structural;
 

@@ -59,6 +59,7 @@ end component control;
     signal Tb_TRAFO     : STD_LOGIC := '0';
 
     constant clk_period : time := 10 ns;
+    signal count    : integer := 0;
 begin
 
     uut: control port map (Tb_Clk, Tb_INIT, Tb_TRAFO, Tb_EN125, Tb_EN346, Tb_EN78, Tb_RESULT, Tb_S, Tb_ST);
@@ -66,51 +67,26 @@ begin
     begin
         Tb_Clk <= NOT Tb_Clk;
         wait for clk_period/2;
+            count <= count + 1;
+
+        if count = 05 then
             Tb_INIT <= '1';
+            Tb_TRAFO <= '1';
+        end if;
 
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
+        if count = 9 then
+            Tb_INIT <= '0';
+        end if;
+
+        if count = 40 then
             Tb_INIT <= '1';
+            Tb_TRAFO <= '0';
+        end if;
+			
+        if count = 80 then
+            Tb_INIT <= '0';
+            Tb_TRAFO <= '0';
+        end if;
 
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
-            Tb_INIT <= '0';
-				
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
-            Tb_INIT <= '0';
-
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
-            Tb_INIT <= '0';
-				
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
-            Tb_INIT <= '0';
-
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
-            Tb_INIT <= '0';
-				
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
-            Tb_INIT <= '0';
-
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
-            Tb_INIT <= '0';
-				
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
-            Tb_INIT <= '0';
-
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
-            Tb_INIT <= '0';
-				
-        Tb_Clk <= NOT Tb_Clk;
-        wait for clk_period/2;
-            Tb_INIT <= '0';
-				
     end process FSM;
 end Behavioral;

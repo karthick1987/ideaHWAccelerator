@@ -7,8 +7,8 @@ Parsing VHDL file "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/control.vhd" 
 Parsing VHDL file "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/tb_control.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 85036 KB
-Fuse CPU Usage: 1110 ms
+Fuse Memory Usage: 85040 KB
+Fuse CPU Usage: 1040 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -18,6 +18,6 @@ Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
 Compiled 6 VHDL Units
 Built simulation executable /home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/tb_control_isim_beh.exe
-Fuse Memory Usage: 1180908 KB
-Fuse CPU Usage: 1170 ms
-GCC CPU Usage: 100 ms
+Fuse Memory Usage: 1180940 KB
+Fuse CPU Usage: 1110 ms
+GCC CPU Usage: 160 ms

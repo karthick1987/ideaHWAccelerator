@@ -32,6 +32,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity datapath is
     Port (
              S      : in    STD_LOGIC_VECTOR( 1 downto 0);
+             S_T    : in    STD_LOGIC_VECTOR( 1 downto 0);
              CLK    : in    STD_LOGIC;
              EN125  : in    STD_LOGIC;
              EN346  : in    STD_LOGIC;
@@ -49,7 +50,11 @@ entity datapath is
              Y1     : out   STD_LOGIC_VECTOR( 15 downto 0 );
              Y2     : out   STD_LOGIC_VECTOR( 15 downto 0 );
              Y3     : out   STD_LOGIC_VECTOR( 15 downto 0 );
-             Y4     : out   STD_LOGIC_VECTOR( 15 downto 0 )
+             Y4     : out   STD_LOGIC_VECTOR( 15 downto 0 );
+             Y1_T   : out   STD_LOGIC_VECTOR( 15 downto 0 );
+             Y2_T   : out   STD_LOGIC_VECTOR( 15 downto 0 );
+             Y3_T   : out   STD_LOGIC_VECTOR( 15 downto 0 );
+             Y4_T   : out   STD_LOGIC_VECTOR( 15 downto 0 )
 );
 end datapath;
 
@@ -138,6 +143,12 @@ architecture Behavioral of datapath is
     signal XOROUT5 : STD_LOGIC_VECTOR(15 downto 0) := (OTHERS => '0');
 
 begin
+
+    Y1_T <= R1OUT;
+    Y2_T <= R2OUT;
+    Y3_T <= R3OUT;
+    Y4_T <= R4OUT;
+
     M1: mulop generic map(NIBBLE_BITS) port map( MXOUT1, MXOUT2, MULOUT);
     A1: addop generic map(NIBBLE_BITS) port map( MXOUT3, MXOUT4, ADDOUT);
 
@@ -161,7 +172,7 @@ begin
     MX1: mux4x1 port map( S, X1, X4, Z5, Z6, MXOUT1);
     MX2: mux4x1 port map( S, Z1, Z4, R5OUT, R8OUT, MXOUT2);
     MX3: mux4x1 port map( S, X3, X2, R6OUT, R7OUT, MXOUT3);
-    MX4: mux4x1 port map( S, Z3, Z2, MULOUT, MULOUT, MXOUT4);
+    MX4: mux4x1 port map( S_T, Z3, Z2, MULOUT, MULOUT, MXOUT4);
 
 end Behavioral;
 

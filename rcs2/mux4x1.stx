@@ -5,14 +5,14 @@ Parameter TMPDIR set to /home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/xst/proj
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Parameter xsthdpdir set to /home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
@@ -22,16 +22,16 @@ WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Onl
 =========================================================================
 Compiling vhdl file "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/mux4x1.vhd" in Library work.
 Entity <mux4x1> compiled.
-Entity <mux4x1> (Architecture <Structural>) compiled.
+Entity <mux4x1> (Architecture <structural>) compiled.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 
 
-Total memory usage is 458932 kilobytes
+Total memory usage is 458956 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

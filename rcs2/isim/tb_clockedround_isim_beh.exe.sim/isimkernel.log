@@ -1,0 +1,10 @@
+Command line:
+   tb_clockedround_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  44591
+
+Sun Jan 13 13:17:53 2019
+
+
+ Elaboration Time: 0 sec

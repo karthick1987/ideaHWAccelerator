@@ -22,7 +22,10 @@ WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Onl
 =========================================================================
 Compiling vhdl file "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/control.vhd" in Library work.
 Entity <control> compiled.
-Entity <control> (Architecture <Behavioral>) compiled.
+ERROR:HDLParsers:164 - "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/control.vhd" Line 146. parse error, unexpected ELSE, expecting END
+ERROR:HDLParsers:164 - "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/control.vhd" Line 158. parse error, unexpected WHEN, expecting END
+ERROR:HDLParsers:164 - "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/control.vhd" Line 167. parse error, unexpected CASE, expecting IF
+ERROR:HDLParsers:164 - "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/control.vhd" Line 169. parse error, unexpected PROCESS, expecting IF
 
 
 Total REAL time to Xst completion: 0.00 secs
@@ -31,9 +34,9 @@ Total CPU time to Xst completion: 0.04 secs
 --> 
 
 
-Total memory usage is 459096 kilobytes
+Total memory usage is 459224 kilobytes
 
-Number of errors   :    0 (   0 filtered)
+Number of errors   :    4 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

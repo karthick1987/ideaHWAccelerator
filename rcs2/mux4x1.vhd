@@ -44,7 +44,7 @@ end mux4x1;
 architecture Structural of mux4x1 is
 
 begin
-    mux:process (S, D0, D1)
+    mux:process (S, D0, D1, D2, D3)
     begin
         if (S = "00") then
             O <= D0;
