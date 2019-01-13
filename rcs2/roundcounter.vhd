@@ -76,23 +76,27 @@ begin
         end if;
     end process fsm;
 
-    outputs: process (state)
+    outputs: process (CLK,state)
     begin
-	 
-        case state is 
-            when SLEEP =>
-                    INIT <= '0';
-                    READY <= '1';
-						  
-            when SETUP =>
-                    INIT <= '1';
-                    READY <= '0';
-                    count <= count + '1';
+        if (CLK'EVENT and CLK='1') then
+			  case state is
+					when SLEEP =>
+							  INIT <= '0';
+							  READY <= '1';
+							  if START = '1' then
+									count <= "0000";
+							  end if;
+							  
+					when SETUP =>
+							  INIT <= '1';
+							  READY <= '0';
+							  count <= count + '1';
 
-            when CALC =>
-                    INIT <= '0';
-
-        end case;
+					when CALC =>
+							  INIT <= '0';
+							  
+			  end case;
+			end if;
     end process outputs;
 
 end Behavioral;
