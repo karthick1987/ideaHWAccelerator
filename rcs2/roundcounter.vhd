@@ -19,6 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use ieee.std_logic_unsigned.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -41,9 +42,58 @@ entity roundcounter is
 end roundcounter;
 
 architecture Behavioral of roundcounter is
+    type state_type is (SLEEP, SETUP, CALC);
+    signal state : state_type;
+    signal count : STD_LOGIC_VECTOR (3 downto 0) := (OTHERS => '0');
 
 begin
+    ROUND <= count;
+    fsm: process(CLK)
+    begin
+        if (CLK'EVENT and CLK='1') then
+            case state is
+                when SLEEP =>
+                    if START = '1' then
+                        state <= SETUP;
+                    else
+                        state <= SLEEP;
+                    end if;
+						  
+                when SETUP =>
+                    state <= CALC;
+						  
+                when CALC =>
+                    if RESULT = '0' then
+                        state <= CALC;
+                    elsif (RESULT = '1') and (count /= "1000") then
+                        state <= SETUP;
+                    else
+                        state <= SLEEP;
+                    end if;
+						  
+            end case;
+				
+        end if;
+    end process fsm;
 
+    outputs: process (state)
+    begin
+	 
+        case state is 
+            when SLEEP =>
+                    INIT <= '0';
+                    READY <= '1';
+						  
+            when SETUP =>
+                    INIT <= '1';
+                    READY <= '0';
+                    count <= count + '1';
+
+            when CALC =>
+                    INIT <= '0';
+
+        end case;
+    end process outputs;
 
 end Behavioral;
 

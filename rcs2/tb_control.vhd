@@ -35,7 +35,7 @@ end tb_control;
 
 architecture Behavioral of tb_control is
     Component control
-    Port ( 
+    Port (
              CLK : in  STD_LOGIC;
              INIT : in  STD_LOGIC;
              TRAFO : in STD_LOGIC;
@@ -82,7 +82,7 @@ begin
             Tb_INIT <= '1';
             Tb_TRAFO <= '0';
         end if;
-			
+
         if count = 80 then
             Tb_INIT <= '0';
             Tb_TRAFO <= '0';

@@ -137,7 +137,7 @@ architecture Behavioral of datapath is
 
     -- Signals for MUL and ADD out
     signal MULOUT : STD_LOGIC_VECTOR(15 downto 0) := (OTHERS => '0');
-    signal ADDOUT : STD_LOGIC_VECTOR(15 downto 0) := (OTHERS => '0');
+   signal ADDOUT : STD_LOGIC_VECTOR(15 downto 0) := (OTHERS => '0');
 
     -- Signals for XOR
     signal XOROUT5 : STD_LOGIC_VECTOR(15 downto 0) := (OTHERS => '0');
