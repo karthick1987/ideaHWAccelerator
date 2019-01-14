@@ -126,7 +126,7 @@ begin
                                 S_T <= "11";
                             else
                                 S_T <= "10";
-									 end if;
+                            end if;
                 when "110"  =>      
                             state <= "111";
                             RESULT <= '0';
@@ -151,7 +151,7 @@ begin
                                         S_T <= "00";
                                     else
                                         S_T <= "01";
-												end if;
+                                    end if;
                                 else
                                     state <= "111";
                                     RESULT <= '0';
@@ -163,7 +163,7 @@ begin
                                         S_T <= "11";
                                     else
                                         S_T <= "10";
-												end if;
+                                    end if;
                                 end if;
                 when others =>
                                     state <= "111";

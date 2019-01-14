@@ -31,20 +31,22 @@ use ieee.std_logic_unsigned.all;
 --use UNISIM.VComponents.all;
 
 entity roundcounter is
-    Port ( CLK : in  STD_LOGIC;
-           START : in  STD_LOGIC;
-           RESULT : in  STD_LOGIC;
-           READY : out  STD_LOGIC;
-           S_i : out  STD_LOGIC;
-           INIT : out  STD_LOGIC;
-           TRAFO : out  STD_LOGIC;
-           ROUND : out  STD_LOGIC_VECTOR (3 downto 0));
+    Port (
+             CLK : in  STD_LOGIC;
+             START : in  STD_LOGIC;
+             RESULT : in  STD_LOGIC;
+             READY : out  STD_LOGIC;
+             S_i : out  STD_LOGIC := '0';
+             INIT : out  STD_LOGIC;
+             TRAFO : out  STD_LOGIC;
+             ROUND : out  STD_LOGIC_VECTOR (3 downto 0)
+         );
 end roundcounter;
 
 architecture Behavioral of roundcounter is
     type state_type is (SLEEP, SETUP, CALC);
     signal state : state_type;
-    signal count : STD_LOGIC_VECTOR (3 downto 0) := (OTHERS => '0');
+    signal count : STD_LOGIC_VECTOR (3 downto 0) := "1000";
 
 begin
     ROUND <= count;
@@ -58,10 +60,10 @@ begin
                     else
                         state <= SLEEP;
                     end if;
-						  
+
                 when SETUP =>
                     state <= CALC;
-						  
+
                 when CALC =>
                     if RESULT = '0' then
                         state <= CALC;
@@ -70,34 +72,86 @@ begin
                     else
                         state <= SLEEP;
                     end if;
-						  
+
             end case;
-				
+
         end if;
     end process fsm;
 
-    outputs: process (CLK,state)
+    TRAFO <= count(3);
+    outputs: process (state)
+    begin
+        --if (CLK'EVENT and CLK='1') then
+            case state is
+                when SLEEP =>
+                    INIT <= '0';
+                    READY <= '1';
+
+                when SETUP =>
+                    INIT <= '1';
+                    READY <= '0';
+
+                when CALC =>
+                    INIT <= '0';
+            end case;
+        --end if;
+    end process outputs;
+
+    counter: process (CLK)
     begin
         if (CLK'EVENT and CLK='1') then
-			  case state is
-					when SLEEP =>
-							  INIT <= '0';
-							  READY <= '1';
-							  if START = '1' then
-									count <= "0000";
-							  end if;
-							  
-					when SETUP =>
-							  INIT <= '1';
-							  READY <= '0';
-							  count <= count + '1';
-
-					when CALC =>
-							  INIT <= '0';
-							  
-			  end case;
-			end if;
-    end process outputs;
+            case count is
+                when "1000"	=>
+                    if START = '1' then
+                        count <= "0000";
+                        S_i <= '1';
+                    end if;
+                when "0000"	=>
+                    if RESULT = '1' then
+                        count <= count + 1;
+                        S_i <= '0';
+                    end if;
+                when "0001"	=>
+                    S_i <= '0';
+                    if RESULT = '1' then
+                        count <= count + 1;
+                    end if;
+                when "0010"	=>
+                    S_i <= '0';
+                    if RESULT = '1' then
+                        count <= count + 1;
+                    end if;
+                when "0011"	=>
+                    S_i <= '0';
+                    if RESULT = '1' then
+                        count <= count + 1;
+                    end if;
+                when "0100"	=>
+                    S_i <= '0';
+                    if RESULT = '1' then
+                        count <= count + 1;
+                    end if;
+                when "0101"	=>
+                    S_i <= '0';
+                    if RESULT = '1' then
+                        count <= count + 1;
+                    end if;
+                when "0110"	=>
+                    S_i <= '0';
+                    if RESULT = '1' then
+                        count <= count + 1;
+                    end if;
+                when "0111"	=>
+                    S_i <= '0';
+                    if RESULT = '1' then
+                        count <= count + 1;
+                    end if;
+                when OTHERS =>
+                    S_i <= '0';
+                    count <= "1000";
+            end case;
+        end if;
+    end process counter;
 
 end Behavioral;
 
