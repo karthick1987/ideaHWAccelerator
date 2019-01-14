@@ -172,8 +172,7 @@ begin
                                     S_T <= "00";
                                     EN125 <= '0';
                                     EN346 <= '0';
-                                    EN78 <= '0';
-
+												EN78 <= '0';
             end case;
         end if;
     end process fsm;

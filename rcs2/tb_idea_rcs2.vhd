@@ -106,12 +106,13 @@ begin
 --            Tb_START <= '0';
 --        end if;
 
---        if count = 80 then
---            X <= x"107745218e378e0d";
---            KEY <= x"000700080400060008000a0000010002";
---        end if;
+        if count = 197 then
+             X <= x"107745218e378e0d";
+             KEY <= x"000700080400060008000a0000010002";
+            Tb_START <= '1';
+         end if;
 
-        if count = 87 then
+        if count = 200 then
             Tb_START <= '0';
         end if;
 

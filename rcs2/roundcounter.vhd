@@ -49,8 +49,9 @@ architecture Behavioral of roundcounter is
     signal count : STD_LOGIC_VECTOR (3 downto 0) := "1000";
 
 begin
+
     ROUND <= count;
-    fsm: process(CLK)
+    fsm: process (CLK, state, RESULT, START)
     begin
         if (CLK'EVENT and CLK='1') then
             case state is
@@ -67,34 +68,34 @@ begin
                 when CALC =>
                     if RESULT = '0' then
                         state <= CALC;
-                    elsif (RESULT = '1') and (count /= "1000") then
-                        state <= SETUP;
                     else
-                        state <= SLEEP;
+                        if (count < "1000") then
+                            state <= SETUP;
+                        else
+                            state <= SLEEP;
+                        end if;
                     end if;
-
             end case;
-
         end if;
     end process fsm;
 
     TRAFO <= count(3);
+
     outputs: process (state)
     begin
-        --if (CLK'EVENT and CLK='1') then
-            case state is
-                when SLEEP =>
-                    INIT <= '0';
-                    READY <= '1';
+        case state is
+            when SLEEP =>
+                INIT <= '0';
+                READY <= '1';
 
-                when SETUP =>
-                    INIT <= '1';
-                    READY <= '0';
+            when SETUP =>
+                INIT <= '1';
+                READY <= '0';
 
-                when CALC =>
-                    INIT <= '0';
-            end case;
-        --end if;
+            when CALC =>
+                INIT <= '0';
+                READY <= '0';
+        end case;
     end process outputs;
 
     counter: process (CLK)
