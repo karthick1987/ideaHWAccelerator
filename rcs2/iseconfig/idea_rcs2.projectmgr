@@ -67,13 +67,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f1000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f10000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
       <ClosedNodes>
@@ -96,18 +96,22 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/clockedround - Structural |home|ck|Documents|Master_TUM|WS_1819|VHDL|rcs2|clockedround.vhd/D1 - datapath - Behavioral</ClosedNode>
          <ClosedNode>/datapath - Behavioral |home|ck|Documents|Master_TUM|WS_1819|VHDL|rcs2|datapath.vhd</ClosedNode>
+         <ClosedNode>/idea_com - Behavioral |home|ck|Documents|Master_TUM|WS_1819|VHDL|rcs2|idea_com.vhd/idea_1 - idea_com_inner - Behavioral/idea1 - idea_rcs2 - Structural</ClosedNode>
          <ClosedNode>/idea_com - Behavioral |home|ck|Documents|Master_TUM|WS_1819|VHDL|rcs2|idea_com.vhd/idea_1 - idea_com_inner - Behavioral/uart1 - uart - behavior</ClosedNode>
+         <ClosedNode>/tb_clockedround - Behavioral |home|ck|Documents|Master_TUM|WS_1819|VHDL|rcs2|tb_clockedround.vhd/uut - clockedround - Structural</ClosedNode>
          <ClosedNode>/tb_clockedround - Behavioral |home|ck|Documents|Master_TUM|WS_1819|VHDL|rcs2|tb_clockedround.vhd/uut - clockedround - Structural/D1 - datapath - Behavioral</ClosedNode>
+         <ClosedNode>/tb_control - Behavioral |home|ck|Documents|Master_TUM|WS_1819|VHDL|rcs2|tb_control.vhd</ClosedNode>
+         <ClosedNode>/tb_idea_rcs2 - Behavioral |home|ck|Documents|Master_TUM|WS_1819|VHDL|rcs2|tb_idea_rcs2.vhd/uut - idea_rcs2 - Structural</ClosedNode>
          <ClosedNode>/tb_roundcounter - Behavioral |home|ck|Documents|Master_TUM|WS_1819|VHDL|rcs2|tb_roundcounter.vhd/uut - clockedround - Structural/D1 - datapath - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>tb_roundcounter - Behavioral (/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/tb_roundcounter.vhd)</SelectedItem>
+         <SelectedItem>tb_idea_rcs2 - Behavioral (/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/tb_idea_rcs2.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >5</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001ad000000020000000000000000000000000200000064ffffffff000000810000000300000002000001ad0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>tb_roundcounter - Behavioral (/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/tb_roundcounter.vhd)</CurrentItem>
+      <CurrentItem>tb_idea_rcs2 - Behavioral (/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/tb_idea_rcs2.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -128,12 +132,12 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f1000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f10000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
 </Project>

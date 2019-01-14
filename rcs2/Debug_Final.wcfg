@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/tb_idea_rcs2_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="tb_idea_rcs2" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="27" />
+   <wvobject fp_name="/tb_idea_rcs2/tb_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_clk</obj_property>
+      <obj_property name="ObjectShortName">tb_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_idea_rcs2/tb_start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_start</obj_property>
+      <obj_property name="ObjectShortName">tb_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_idea_rcs2/key" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">key[127:0]</obj_property>
+      <obj_property name="ObjectShortName">key[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_idea_rcs2/x" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">x[63:0]</obj_property>
+      <obj_property name="ObjectShortName">x[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_idea_rcs2/x_1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">x_1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">x_1[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_idea_rcs2/x_2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">x_2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">x_2[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_idea_rcs2/x_3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">x_3[15:0]</obj_property>
+      <obj_property name="ObjectShortName">x_3[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_idea_rcs2/x_4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">x_4[15:0]</obj_property>
+      <obj_property name="ObjectShortName">x_4[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_idea_rcs2/ready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_idea_rcs2/uut/yr1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">yr1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">yr1[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_idea_rcs2/uut/yr2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">yr2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">yr2[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_idea_rcs2/uut/yr3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">yr3[15:0]</obj_property>
+      <obj_property name="ObjectShortName">yr3[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_idea_rcs2/uut/yr4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">yr4[15:0]</obj_property>
+      <obj_property name="ObjectShortName">yr4[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_idea_rcs2/uut/RC/init" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">init</obj_property>
+      <obj_property name="ObjectShortName">init</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_idea_rcs2/uut/RC/state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_idea_rcs2/uut/RC/count" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">count[3:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_idea_rcs2/uut/EXTRND/result" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">result</obj_property>
+      <obj_property name="ObjectShortName">result</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_idea_rcs2/uut/EXTRND/y1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">y1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">y1[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_idea_rcs2/uut/EXTRND/y2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">y2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">y2[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_idea_rcs2/uut/EXTRND/y3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">y3[15:0]</obj_property>
+      <obj_property name="ObjectShortName">y3[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_idea_rcs2/uut/EXTRND/y4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">y4[15:0]</obj_property>
+      <obj_property name="ObjectShortName">y4[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_idea_rcs2/uut/EXTRND/z1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">z1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">z1[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_idea_rcs2/uut/EXTRND/z2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">z2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">z2[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_idea_rcs2/uut/EXTRND/z3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">z3[15:0]</obj_property>
+      <obj_property name="ObjectShortName">z3[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_idea_rcs2/uut/EXTRND/z4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">z4[15:0]</obj_property>
+      <obj_property name="ObjectShortName">z4[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_idea_rcs2/uut/EXTRND/z5" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">z5[15:0]</obj_property>
+      <obj_property name="ObjectShortName">z5[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_idea_rcs2/uut/EXTRND/z6" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">z6[15:0]</obj_property>
+      <obj_property name="ObjectShortName">z6[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
+   </wvobject>
+</wave_config>

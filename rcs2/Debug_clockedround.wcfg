@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/tb_clockedround_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="tb_clockedround" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="26" />
+   <wvobject fp_name="/tb_clockedround/tb_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_clk</obj_property>
+      <obj_property name="ObjectShortName">tb_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clockedround/tb_init" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_init</obj_property>
+      <obj_property name="ObjectShortName">tb_init</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clockedround/tb_trafo" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_trafo</obj_property>
+      <obj_property name="ObjectShortName">tb_trafo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clockedround/key" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">key[95:0]</obj_property>
+      <obj_property name="ObjectShortName">key[95:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clockedround/x" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">x[63:0]</obj_property>
+      <obj_property name="ObjectShortName">x[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clockedround/x1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">x1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">x1[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clockedround/x2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">x2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">x2[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clockedround/x3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">x3[15:0]</obj_property>
+      <obj_property name="ObjectShortName">x3[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clockedround/x4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">x4[15:0]</obj_property>
+      <obj_property name="ObjectShortName">x4[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clockedround/z1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">z1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">z1[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clockedround/z2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">z2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">z2[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clockedround/z3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">z3[15:0]</obj_property>
+      <obj_property name="ObjectShortName">z3[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clockedround/z4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">z4[15:0]</obj_property>
+      <obj_property name="ObjectShortName">z4[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clockedround/z5" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">z5[15:0]</obj_property>
+      <obj_property name="ObjectShortName">z5[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clockedround/z6" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">z6[15:0]</obj_property>
+      <obj_property name="ObjectShortName">z6[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clockedround/y1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">y1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">y1[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clockedround/y2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">y2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">y2[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clockedround/y3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">y3[15:0]</obj_property>
+      <obj_property name="ObjectShortName">y3[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clockedround/y4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">y4[15:0]</obj_property>
+      <obj_property name="ObjectShortName">y4[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clockedround/tb_result" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_result</obj_property>
+      <obj_property name="ObjectShortName">tb_result</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clockedround/y1_trafo" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">y1_trafo[15:0]</obj_property>
+      <obj_property name="ObjectShortName">y1_trafo[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clockedround/y2_trafo" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">y2_trafo[15:0]</obj_property>
+      <obj_property name="ObjectShortName">y2_trafo[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clockedround/y3_trafo" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">y3_trafo[15:0]</obj_property>
+      <obj_property name="ObjectShortName">y3_trafo[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clockedround/y4_trafo" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">y4_trafo[15:0]</obj_property>
+      <obj_property name="ObjectShortName">y4_trafo[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clockedround/count" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">count</obj_property>
+      <obj_property name="ObjectShortName">count</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clockedround/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>
