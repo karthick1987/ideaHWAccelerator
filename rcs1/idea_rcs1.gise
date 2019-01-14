@@ -124,11 +124,11 @@
       <outfile xil_pn:name="uart.vhd"/>
       <outfile xil_pn:name="xorop.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1544912331" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7175229422803001579" xil_pn:start_ts="1544912331">
+    <transform xil_pn:end_ts="1547380992" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7175229422803001579" xil_pn:start_ts="1547380992">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1544912331" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-5685566969096852563" xil_pn:start_ts="1544912331">
+    <transform xil_pn:end_ts="1547380992" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-5685566969096852563" xil_pn:start_ts="1547380992">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -159,7 +159,7 @@
       <outfile xil_pn:name="uart.vhd"/>
       <outfile xil_pn:name="xorop.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1544961506" xil_pn:in_ck="45024632943881799" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1945758540316261227" xil_pn:start_ts="1544961504">
+    <transform xil_pn:end_ts="1547467893" xil_pn:in_ck="45024632943881799" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1945758540316261227" xil_pn:start_ts="1547467892">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -171,7 +171,7 @@
       <outfile xil_pn:name="tb_idea_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1544961506" xil_pn:in_ck="-6139322764803458269" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="1398670619738452920" xil_pn:start_ts="1544961506">
+    <transform xil_pn:end_ts="1547467894" xil_pn:in_ck="-6139322764803458269" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="1398670619738452920" xil_pn:start_ts="1547467893">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>

@@ -62,11 +62,10 @@
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
-         <ClosedNode>/idea_com - Behavioral |home|ck|Documents|Master_TUM|WS_1819|VHDL|rcs1|idea_com.vhd/idea_1 - idea_com_inner - Behavioral</ClosedNode>
          <ClosedNode>/idea_com - Behavioral |home|ck|Documents|Master_TUM|WS_1819|VHDL|rcs1|idea_com.vhd/idea_1 - idea_com_inner - Behavioral/idea1 - idea_single - Structural</ClosedNode>
          <ClosedNode>/idea_com - Behavioral |home|ck|Documents|Master_TUM|WS_1819|VHDL|rcs1|idea_com.vhd/idea_1 - idea_com_inner - Behavioral/uart1 - uart - behavior</ClosedNode>
-         <ClosedNode>/tb_control - Behavioral |home|ck|Documents|Master_TUM|WS_1819|VHDL|rcs1|tb_control.vhd</ClosedNode>
-         <ClosedNode>/tb_idea - Behavioral |home|ck|Documents|Master_TUM|WS_1819|VHDL|rcs1|tb_idea.vhd/uut - idea_single - Structural</ClosedNode>
+         <ClosedNode>/tb_idea - Behavioral |home|ck|Documents|Master_TUM|WS_1819|VHDL|rcs1|tb_idea.vhd</ClosedNode>
+         <ClosedNode>/tb_idea - Behavioral |home|ck|Documents|Master_TUM|WS_1819|VHDL|rcs1|tb_idea.vhd/uut - idea_single - Structural/OT - trafo - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem>tb_idea - Behavioral (/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs1/tb_idea.vhd)</SelectedItem>
@@ -74,7 +73,7 @@
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001ad000000020000000000000000000000000200000064ffffffff000000810000000300000002000001ad0000000100000003000000000000000100000003</ViewHeaderState>
-      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>tb_idea - Behavioral (/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs1/tb_idea.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
@@ -105,7 +104,7 @@
       <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff0000000000000002000001360000012001000000060100000002</SourceProcessView>
-   <CurrentView>Implementation</CurrentView>
+   <CurrentView>Behavioral Simulation</CurrentView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
