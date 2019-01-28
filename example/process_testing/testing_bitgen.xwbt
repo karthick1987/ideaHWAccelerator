@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.ncd
+OUTFILE=/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing
+LICENSE=WebPack
+USER_INFO=211334946_0_0_873

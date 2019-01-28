@@ -12,3 +12,5 @@ Time resolution is 1 ps
 Simulator is doing circuit initialization process.
 at 0 ps, Instance /tb_idea_rcs2/uut/EXTRND/D1/M1/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 Finished circuit initialization process.
+# run 1.00us
+# exit 0

@@ -1,0 +1,41 @@
+xst -intstyle ise -ifn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.xst" -ofn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.syr" 
+xst -intstyle ise -ifn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.xst" -ofn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.syr" 
+xst -intstyle ise -ifn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.xst" -ofn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 testing.ngc testing.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o testing_map.ncd testing.ngd testing.pcf 
+par -w -intstyle ise -ol high -t 1 testing_map.ncd testing.ncd testing.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing.twx testing.ncd -o testing.twr testing.pcf 
+xst -intstyle ise -ifn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.xst" -ofn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.syr" 
+xst -intstyle ise -ifn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.xst" -ofn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 testing.ngc testing.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o testing_map.ncd testing.ngd testing.pcf 
+par -w -intstyle ise -ol high -t 1 testing_map.ncd testing.ncd testing.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing.twx testing.ncd -o testing.twr testing.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_preroute.twx testing_map.ncd -o testing_preroute.twr testing.pcf 
+bitgen -intstyle ise -f testing.ut testing.ncd 
+xst -intstyle ise -ifn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.xst" -ofn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.syr" 
+xst -intstyle ise -ifn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.xst" -ofn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.syr" 
+xst -intstyle ise -ifn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.xst" -ofn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.syr" 
+xst -intstyle ise -ifn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.xst" -ofn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 testing.ngc testing.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o testing_map.ncd testing.ngd testing.pcf 
+par -w -intstyle ise -ol high -t 1 testing_map.ncd testing.ncd testing.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing.twx testing.ncd -o testing.twr testing.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_preroute.twx testing_map.ncd -o testing_preroute.twr testing.pcf 
+netgen -intstyle ise -s 4  -pcf testing.pcf -rpw 100 -tpw 0 -ar Structure -tm testing -w -dir netgen/map -ofmt vhdl -sim testing_map.ncd testing_map.vhd 
+bitgen -intstyle ise -f testing.ut testing.ncd 
+xst -intstyle ise -ifn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.xst" -ofn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.syr" 
+xst -intstyle ise -ifn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.xst" -ofn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 testing.ngc testing.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o testing_map.ncd testing.ngd testing.pcf 
+par -w -intstyle ise -ol high -t 1 testing_map.ncd testing.ncd testing.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing.twx testing.ncd -o testing.twr testing.pcf 
+bitgen -intstyle ise -f testing.ut testing.ncd 
+xst -intstyle ise -ifn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.xst" -ofn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.syr" 
+xst -intstyle ise -ifn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.xst" -ofn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.syr" 
+xst -intstyle ise -ifn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.xst" -ofn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.syr" 
+xst -intstyle ise -ifn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.xst" -ofn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/example/process_testing/testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 testing.ngc testing.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o testing_map.ncd testing.ngd testing.pcf 
+par -w -intstyle ise -ol high -t 1 testing_map.ncd testing.ncd testing.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing.twx testing.ncd -o testing.twr testing.pcf 

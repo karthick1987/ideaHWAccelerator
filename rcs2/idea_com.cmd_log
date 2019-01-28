@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/idea_com.xst" -ofn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/idea_com.syr" 
+xst -intstyle ise -ifn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/idea_com.xst" -ofn "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/idea_com.syr" 
