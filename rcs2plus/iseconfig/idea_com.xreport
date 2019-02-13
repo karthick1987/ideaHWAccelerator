@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-01-28T14:25:18</DateModified>
+  <DateModified>2019-02-04T17:29:53</DateModified>
   <ModuleName>idea_com</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2plus/iseconfig/idea_com.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2plus</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2plus/</ImplementationReportsDirectory>
   <DateInitialized>2019-01-28T13:31:43</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

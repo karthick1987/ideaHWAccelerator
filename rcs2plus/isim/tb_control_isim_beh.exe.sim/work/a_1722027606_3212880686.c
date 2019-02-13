@@ -89,7 +89,7 @@ LAB4:    xsi_set_current_line(70, ng0);
     t2 = (t0 + 2472U);
     t3 = *((char **)t2);
     t12 = *((int *)t3);
-    t4 = (t12 == 5);
+    t4 = (t12 == 4);
     if (t4 != 0)
         goto LAB8;
 

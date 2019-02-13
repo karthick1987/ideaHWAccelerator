@@ -69,7 +69,7 @@ begin
         wait for clk_period/2;
             count <= count + 1;
 
-        if count = 05 then
+        if count = 04 then
             Tb_INIT <= '1';
             Tb_TRAFO <= '1';
         end if;

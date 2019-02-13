@@ -120,14 +120,14 @@ begin
                                 end if;
                             end if;
 
-                when others =>
-                            state <= "11";
-                            RESULT <= '0';
-                            S <= "11";
-                            S_T <= "00";
-                            EN125 <= '0';
-                            EN346 <= '0';
-                            EN78 <= '0';
+                when others => null;
+--                            state <= "11";
+--                            RESULT <= '0';
+--                            S <= "11";
+--                            S_T <= "00";
+--                            EN125 <= '0';
+--                            EN346 <= '0';
+--                            EN78 <= '0';
 
             end case;
         end if;

@@ -14,29 +14,31 @@
          <ClosedNode>/idea_com - Behavioral |home|ck|Documents|Master_TUM|WS_1819|VHDL|rcs2|idea_com.vhd/idea_1 - idea_com_inner - Behavioral/uart1 - uart - behavior</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>idea_com - Behavioral (/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/idea_com.vhd)</SelectedItem>
+         <SelectedItem>mux1 - mux2x1 - Structural (/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/mux2x1.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001ad000000020000000000000000000000000200000064ffffffff000000810000000300000002000001ad0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>idea_com - Behavioral (/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/idea_com.vhd)</CurrentItem>
+      <CurrentItem>mux1 - mux2x1 - Structural (/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/mux2x1.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Configure Target Device</ClosedNode>
-         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Synthesize - XST</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f1000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f10000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Synthesize - XST</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -90,27 +92,29 @@
       <CurrentItem/>
    </ItemView>
    <SourceProcessView>000000ff0000000000000002000001360000012001000000060100000002</SourceProcessView>
-   <CurrentView>Behavioral Simulation</CurrentView>
+   <CurrentView>Implementation</CurrentView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/clockedround - Structural |home|ck|Documents|Master_TUM|WS_1819|VHDL|rcs2|clockedround.vhd/D1 - datapath - Behavioral</ClosedNode>
          <ClosedNode>/datapath - Behavioral |home|ck|Documents|Master_TUM|WS_1819|VHDL|rcs2|datapath.vhd</ClosedNode>
+         <ClosedNode>/idea_com - Behavioral |home|ck|Documents|Master_TUM|WS_1819|VHDL|rcs2|idea_com.vhd/idea_1 - idea_com_inner - Behavioral</ClosedNode>
          <ClosedNode>/idea_com - Behavioral |home|ck|Documents|Master_TUM|WS_1819|VHDL|rcs2|idea_com.vhd/idea_1 - idea_com_inner - Behavioral/idea1 - idea_rcs2 - Structural</ClosedNode>
          <ClosedNode>/idea_com - Behavioral |home|ck|Documents|Master_TUM|WS_1819|VHDL|rcs2|idea_com.vhd/idea_1 - idea_com_inner - Behavioral/idea1 - idea_rcs2 - Structural/EXTRND - clockedround - Structural/D1 - datapath - Behavioral</ClosedNode>
          <ClosedNode>/idea_com - Behavioral |home|ck|Documents|Master_TUM|WS_1819|VHDL|rcs2|idea_com.vhd/idea_1 - idea_com_inner - Behavioral/uart1 - uart - behavior</ClosedNode>
          <ClosedNode>/tb_clockedround - Behavioral |home|ck|Documents|Master_TUM|WS_1819|VHDL|rcs2|tb_clockedround.vhd/uut - clockedround - Structural/D1 - datapath - Behavioral</ClosedNode>
+         <ClosedNode>/tb_control - Behavioral |home|ck|Documents|Master_TUM|WS_1819|VHDL|rcs2|tb_control.vhd</ClosedNode>
          <ClosedNode>/tb_idea_rcs2 - Behavioral |home|ck|Documents|Master_TUM|WS_1819|VHDL|rcs2|tb_idea_rcs2.vhd/uut - idea_rcs2 - Structural</ClosedNode>
          <ClosedNode>/tb_roundcounter - Behavioral |home|ck|Documents|Master_TUM|WS_1819|VHDL|rcs2|tb_roundcounter.vhd/uut - clockedround - Structural/D1 - datapath - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>idea_rcs2</SelectedItem>
+         <SelectedItem>xc3s500e-4fg320</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001ad000000020000000000000000000000000200000064ffffffff000000810000000300000002000001ad0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>idea_rcs2</CurrentItem>
+      <CurrentItem>xc3s500e-4fg320</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>

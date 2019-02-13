@@ -19,7 +19,7 @@ Parsing VHDL file "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/tb_idea_rcs2.
 Starting static elaboration
 Completed static elaboration
 Fuse Memory Usage: 87036 KB
-Fuse CPU Usage: 1040 ms
+Fuse CPU Usage: 980 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -43,5 +43,5 @@ Waiting for 1 sub-compilation(s) to finish...
 Compiled 30 VHDL Units
 Built simulation executable /home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/tb_idea_rcs2_isim_beh.exe
 Fuse Memory Usage: 1187464 KB
-Fuse CPU Usage: 1210 ms
-GCC CPU Usage: 240 ms
+Fuse CPU Usage: 1090 ms
+GCC CPU Usage: 110 ms

@@ -13,11 +13,11 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="14" />
+   <WVObjectSize size="16" />
    <wvobject fp_name="/tb_idea_rcs2/count" type="other" db_ref_id="1">
       <obj_property name="ElementShortName">count</obj_property>
       <obj_property name="ObjectShortName">count</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_idea_rcs2/tb_clk" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">tb_clk</obj_property>
@@ -80,5 +80,13 @@
    <wvobject fp_name="/tb_idea_rcs2/ready" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">ready</obj_property>
       <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_idea_rcs2/uut/result" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">result</obj_property>
+      <obj_property name="ObjectShortName">result</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_idea_rcs2/uut/init" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">init</obj_property>
+      <obj_property name="ObjectShortName">init</obj_property>
    </wvobject>
 </wave_config>

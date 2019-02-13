@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Reading design: idea_com.prj
@@ -120,14 +120,14 @@ Architecture structural of Entity mux4x1 is up to date.
 Compiling vhdl file "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/datapath.vhd" in Library work.
 Architecture behavioral of Entity datapath is up to date.
 Compiling vhdl file "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/control.vhd" in Library work.
-Entity <control> compiled.
-Entity <control> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity control is up to date.
 Compiling vhdl file "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/mux2x1.vhd" in Library work.
 Architecture structural of Entity mux2x1 is up to date.
 Compiling vhdl file "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/keygen.vhd" in Library work.
 Architecture structural of Entity keygen is up to date.
 Compiling vhdl file "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/roundcounter.vhd" in Library work.
-Architecture behavioral of Entity roundcounter is up to date.
+Entity <roundcounter> compiled.
+Entity <roundcounter> (Architecture <behavioral>) compiled.
 Compiling vhdl file "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/clockedround.vhd" in Library work.
 Architecture structural of Entity clockedround is up to date.
 Compiling vhdl file "/home/ck/Documents/Master_TUM/WS_1819/VHDL/rcs2/txmit.vhd" in Library work.
@@ -375,14 +375,12 @@ Synthesizing Unit <roundcounter>.
     | States             | 3                                              |
     | Transitions        | 13                                             |
     | Inputs             | 10                                             |
-    | Outputs            | 3                                              |
+    | Outputs            | 2                                              |
     | Clock              | CLK                       (rising_edge)        |
     | Power Up State     | sleep                                          |
     | Encoding           | automatic                                      |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-WARNING:Xst:737 - Found 1-bit latch for signal <READY>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
     Found 1-bit register for signal <S_i>.
     Summary:
 	inferred   2 Finite State Machine(s).
@@ -537,8 +535,6 @@ Macro Statistics
  2-bit register                                        : 2
  5-bit register                                        : 1
  8-bit register                                        : 2
-# Latches                                              : 1
- 1-bit latch                                           : 1
 # Comparators                                          : 4
  128-bit comparator equal                              : 1
  17-bit comparator greatequal                          : 1
@@ -629,8 +625,6 @@ Macro Statistics
  4-bit up counter                                      : 1
 # Registers                                            : 462
  Flip-Flops                                            : 462
-# Latches                                              : 1
- 1-bit latch                                           : 1
 # Comparators                                          : 4
  128-bit comparator equal                              : 1
  17-bit comparator greatequal                          : 1
@@ -659,8 +653,6 @@ Optimizing unit <txmit> ...
 Optimizing unit <rxcver> ...
 
 Optimizing unit <reg> ...
-
-Optimizing unit <roundcounter> ...
 
 Optimizing unit <control> ...
 
@@ -723,15 +715,15 @@ Cell Usage :
 #      LUT2                        : 133
 #      LUT2_D                      : 2
 #      LUT2_L                      : 1
-#      LUT3                        : 371
+#      LUT3                        : 369
 #      LUT3_L                      : 64
-#      LUT4                        : 660
+#      LUT4                        : 662
 #      LUT4_L                      : 56
 #      MUXCY                       : 149
 #      MUXF5                       : 247
 #      VCC                         : 1
 #      XORCY                       : 80
-# FlipFlops/Latches                : 560
+# FlipFlops/Latches                : 559
 #      FD                          : 50
 #      FDC                         : 15
 #      FDCE                        : 14
@@ -743,7 +735,6 @@ Cell Usage :
 #      FDRSE                       : 2
 #      FDS                         : 7
 #      FDSE                        : 1
-#      LD_1                        : 1
 # Clock Buffers                    : 2
 #      BUFG                        : 1
 #      BUFGP                       : 1
@@ -760,7 +751,7 @@ Device utilization summary:
 Selected Device : 3s500efg320-4 
 
  Number of Slices:                      770  out of   4656    16%  
- Number of Slice Flip Flops:            560  out of   9312     6%  
+ Number of Slice Flip Flops:            559  out of   9312     6%  
  Number of 4 input LUTs:               1356  out of   9312    14%  
  Number of IOs:                          12
  Number of bonded IOBs:                  12  out of    232     5%  
@@ -790,7 +781,6 @@ Clock Signal                       | Clock buffer(FF name)         | Load  |
 -----------------------------------+-------------------------------+-------+
 Clk                                | BUFGP                         | 33    |
 clk_div_1/CLK_OUT1                 | BUFG                          | 502   |
-idea_1/idea1/RC/state_FSM_FFd1     | NONE(idea_1/idea1/RC/READY)   | 1     |
 idea_1/uart1/rx/rxclk              | NONE(idea_1/uart1/rx/rxparity)| 12    |
 idea_1/uart1/tx/txclk              | NONE(idea_1/uart1/tx/tsr_7)   | 12    |
 -----------------------------------+-------------------------------+-------+
@@ -855,7 +845,7 @@ Delay:               7.013ns (Levels of Logic = 14)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_div_1/CLK_OUT1'
   Clock period: 27.336ns (frequency: 36.582MHz)
-  Total number of paths / destination ports: 1104484225 / 918
+  Total number of paths / destination ports: 1104484231 / 918
 -------------------------------------------------------------------------
 Delay:               27.336ns (Levels of Logic = 47)
   Source:            idea_1/idea1/RC/count_FSM_FFd2_1 (FF)
@@ -1049,14 +1039,14 @@ Offset:              4.310ns (Levels of Logic = 1)
 
 
 Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 9.92 secs
+Total CPU time to Xst completion: 9.87 secs
  
 --> 
 
 
-Total memory usage is 552108 kilobytes
+Total memory usage is 552364 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    6 (   0 filtered)
-Number of infos    :   11 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
 
